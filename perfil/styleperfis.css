@@ -539,7 +539,7 @@ section p {
 
 .site-footer {
   width: 100%;
-  background: linear-gradient(180deg, #2f3a44, #1f2933);
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
   padding: 25px 0;
 }
 
@@ -731,13 +731,13 @@ section p {
 .redes {
   margin-top: 30px;
   padding: 20px;
-  background: linear-gradient(135deg, #ecff16 0%, #e7ef0b 100%);
+  background: linear-gradient(135deg, #ffff 0%, #ffff 100%);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .redes h3 {
-  color: white;
+  color: var(--primary);
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.2rem;
@@ -782,8 +782,8 @@ section p {
   );
 }
 
-.social-btn.twitter {
-  background: #000000;
+.social-btn.pinterest {
+  background: #e60023;
 }
 
 .social-btn.youtube {
@@ -793,7 +793,7 @@ section p {
 /* Seção de doações */
 .doacoes {
   padding: 20px;
-  background: linear-gradient(135deg, #fcef00 0%, #e6f200 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -804,6 +804,7 @@ section p {
   margin-bottom: 15px;
   font-size: 1.2rem;
   font-weight: 700;
+  color: var(--primary);
 }
 
 .donation-image {
@@ -825,7 +826,7 @@ section p {
 }
 
 .doacoes p {
-  color: white;
+  color: var(--primary);
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 15px 0;

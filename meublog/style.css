@@ -464,7 +464,7 @@ main {
 /* Footer */
 .site-footer {
   margin-top: auto;
-  background: #0b1a2a;
+  background: var(--primary);
   color: white;
   padding: 16px 0;
 }
@@ -579,7 +579,7 @@ main {
     font-size: 2rem;
   }
 
-  nav a {
+  .nav a {
     display: inline-block;
     margin: 6px;
   }
@@ -593,7 +593,7 @@ main {
   }
 }
 /* Garantias gerais para imagens não “sumirem”/distorcerem */
-img {
+.img {
   max-width: 100%;
   height: auto;
 }
