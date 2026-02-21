@@ -996,8 +996,8 @@ img {
 }
 
 .carousel-track img {
-  width: 400px;
-  height: 450px;
+  width: 1000px;
+  height: 950px;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 0;
@@ -1024,4 +1024,53 @@ img {
   .carousel-track {
     width: calc(240px * 4);
   }
+}
+.carousel-container {
+  position: relative;
+  max-width: 1055px;
+  width: 100%;
+  aspect-ratio: 4 / 1; /* proporção mais parecida com sua imagem */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantém estilo banner bonito */
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
