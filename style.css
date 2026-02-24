@@ -1029,9 +1029,13 @@ img {
   position: relative;
   max-width: 1055px;
   width: 100%;
-  aspect-ratio: 4 / 1; /* proporção mais parecida com sua imagem */
+  height: 400px; /* altura fixa para manter padrão */
+  background-color: #f5f5f5; /* fundo neutro */
   overflow: hidden;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-slide {
@@ -1041,13 +1045,15 @@ img {
 }
 
 .carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* mantém estilo banner bonito */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* MOSTRA A IMAGEM INTEIRA */
 }
 
 .carousel-slide.active {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prev,
