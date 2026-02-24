@@ -492,16 +492,16 @@ section p {
 }
 
 .expandable-content.active {
-  max-height: 600px;
-  padding: 20px;
+  max-height: 1000px;
+  padding: 25px;
   border-top: 1px solid #e0e0e0;
 }
 
 .expandable-content p {
-  margin: 0;
-  line-height: 1.7;
+  margin-bottom: 20px;
+  line-height: 1.9;
   color: #444;
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 /* Botões de cursos */

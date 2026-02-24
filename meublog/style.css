@@ -60,7 +60,7 @@ body {
   z-index: 1;
 }
 
-.cover-overlay {
+/*.cover-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -69,7 +69,7 @@ body {
     rgba(0, 61, 122, 0.7)
   );
   z-index: 2;
-}
+}*/
 
 .header-content {
   position: relative;

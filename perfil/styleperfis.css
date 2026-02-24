@@ -51,7 +51,7 @@ body {
   z-index: 0;
 }
 
-/* Overlay escuro */
+/* Overlay escuro 
 .cover-overlay {
   position: absolute;
   top: 0;
@@ -64,7 +64,7 @@ body {
     rgba(0, 31, 63, 0.8) 100%
   );
   z-index: 1;
-}
+}*/
 
 /* Conteúdo do header */
 .header-content {
