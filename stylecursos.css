@@ -189,18 +189,22 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav a {
   display: inline-block;
   margin: 0;
-  padding: 18px 25px;
+  padding: 16px 20px;
   font-weight: 500;
   color: #333;
   text-decoration: none;
   position: relative;
   transition: var(--transition);
   font-size: 15px;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -888,7 +892,12 @@ section ul li:last-child {
   }
 
   main section {
-    padding: 30px 20px;
+    padding: 25px 16px;
+  }
+
+  /* disable hover lift on touch devices */
+  main section:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
   }
 
   section h2 {
@@ -909,12 +918,23 @@ section ul li:last-child {
   }
 
   nav a {
-    padding: 15px 20px;
+    padding: 13px 16px;
     font-size: 14px;
   }
 
   nav .btn-inscricao {
-    padding: 15px 25px;
+    padding: 13px 20px;
+  }
+
+  /* social links side-by-side on tablet */
+  .social-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .social-btn {
+    flex: 1 1 calc(50% - 6px);
+    justify-content: center;
   }
 }
 
@@ -982,4 +1002,35 @@ section ul li:last-child {
   .image-highlight {
     height: 160px;
   }
+}
+.area-botao-centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.btn-blo1 {
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.btn-blo1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+}
+
+.btn-blo1:active {
+  transform: scale(0.97);
 }
