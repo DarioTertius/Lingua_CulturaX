@@ -16,6 +16,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family:
     "Segoe UI",
@@ -175,17 +181,28 @@ body {
 nav {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 10px 15px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 nav a {
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 8px;
+  padding: 6px 4px;
   font-weight: 600;
   color: var(--primary);
   text-decoration: none;
   position: relative;
   transition: var(--transition);
+  white-space: nowrap;
+  font-size: 0.95rem;
 }
 
 nav a:hover {
@@ -217,12 +234,17 @@ nav a:hover::after {
   gap: 30px;
   padding: 40px 20px;
   align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* Sidebar de busca à esquerda */
 .sidebar-search {
   width: 300px;
   flex-shrink: 0;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .search-sticky {
@@ -233,6 +255,9 @@ nav a:hover::after {
   padding: 25px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.8s ease-out;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .search-sticky h3 {
@@ -731,22 +756,28 @@ section p {
 .redes {
   margin-top: 30px;
   padding: 20px;
-  background: linear-gradient(135deg, #ffff 0%, #ffff 100%);
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .redes h3 {
   color: var(--primary);
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 .social-btn {
@@ -760,6 +791,11 @@ section p {
   font-weight: 500;
   transition: all 0.3s ease;
   font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .social-btn:hover {
